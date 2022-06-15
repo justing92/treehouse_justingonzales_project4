@@ -13,46 +13,48 @@
     border-radius: 5px;
 
     &:hover {
-      transition: all 0.8s ease 0s;
+      transition: all 0.6s ease-in-out;
     }
   }
   
   .default {
     background-color: $color-teal-link;
+
+    &:hover {
+      background-color: lighten($color-teal-link, 10%);
+    }
   }
 
-  .default:hover {
-    background-color: $color-teal-link-light;
-  }
-  
   .error {
     background-color: $color-salmon;
-  }
 
-  .error:hover {
-    background-color: $color-salmon-light;
+    &:hover {
+      background-color: lighten($color-salmon, 10%);
+    }
   }
   
   .info {
     background-color: $color-light-purple;
-  }
 
-  .info:hover {
-    background-color: $color-light-purple-light;
+    &:hover {
+      background-color: lighten($color-light-purple, 10%);
+    }
   }
   
   .success {
     background-color: $color-green-teal;
-  }
 
-  .success:hover {
-    background-color: $color-green-teal-light;
+    &:hover {
+      background-color: lighten($color-green-teal, 10%);
+    }
   }
   
   .warning {
     background-color: $color-orange;
+
+    &:hover {
+      background-color: lighten($color-orange, 10%);
+    }
   }
 
-  .warning:hover {
-    background-color: $color-orange-light;
-  }
+  
